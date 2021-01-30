@@ -25,8 +25,8 @@ struct DummyView: View {
                 }
                 print("Go to next")
             }, label: {
-                Text("Button")
-            })
+                Text("Next")
+            }).padding()
         }
     }
 }

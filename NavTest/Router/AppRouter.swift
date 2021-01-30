@@ -7,17 +7,6 @@
 
 import SwiftUI
 
-protocol RouteItem {
-    
-    var title: String { get }
-    var next: RouteItem? { get }
-}
-
-protocol Router {
-    func trigger(route: RouteItem)
-    
-}
-
 enum AppRoute: String, RouteItem {
     case landing
     case onboarding
@@ -40,7 +29,7 @@ enum AppRoute: String, RouteItem {
     }
 }
 
-class AppRouter: ObservableObject, Router {
+class AppRouter: ObservableObject, PRouter {
     @Published var current: AppRoute = .landing
     
     func trigger(route: RouteItem) {
@@ -63,7 +52,7 @@ struct AppRouterView: View {
             case .landing:
                 DummyView(routeItem: AppRoute.landing)
             case .onboarding:
-                DummyView(routeItem: AppRoute.onboarding)
+                OnboardingRouterView(router: OnboardingRouter())
             case .dashboard:
                 DummyView(routeItem: AppRoute.dashboard)
             }
