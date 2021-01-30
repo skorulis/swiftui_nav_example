@@ -30,10 +30,15 @@ enum AppRoute: String, RouteItem {
 }
 
 class AppRouter: ObservableObject, PRouter {
+    
     @Published var current: AppRoute = .landing
     
     func trigger(route: RouteItem) {
         current = route as! AppRoute
+    }
+    
+    func pop() {
+        current = .landing
     }
 
 }

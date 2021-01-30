@@ -21,6 +21,16 @@ struct AppTabBar: View {
                     Image(systemName: "moon.fill")
                     Text("Transitions")
                 }
+            NavStackView()
+                .tabItem {
+                    Image(systemName: "bag")
+                    Text("Basic nav")
+                }
+                .environmentObject(OnboardingRouter())
+            SimpleNav()
+                .tabItem {
+                    Text("Simple")
+                }
         }
     }
     

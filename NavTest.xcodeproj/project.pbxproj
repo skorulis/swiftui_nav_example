@@ -14,12 +14,17 @@
 		FA0C003325C3E680003EAD5A /* NavTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C003225C3E680003EAD5A /* NavTestTests.swift */; };
 		FA0C003E25C3E680003EAD5A /* NavTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C003D25C3E680003EAD5A /* NavTestUITests.swift */; };
 		FA0C005425C3EF77003EAD5A /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C005325C3EF77003EAD5A /* DummyView.swift */; };
-		FA0C006625C40ACB003EAD5A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C006525C40ACB003EAD5A /* OnboardingView.swift */; };
 		FA0C006E25C40BD7003EAD5A /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C006B25C40BD7003EAD5A /* AppRouter.swift */; };
 		FA0C006F25C40BD7003EAD5A /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C006C25C40BD7003EAD5A /* OnboardingRouter.swift */; };
 		FA0C007025C40BD7003EAD5A /* PRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C006D25C40BD7003EAD5A /* PRouter.swift */; };
 		FA0C007525C4EFDD003EAD5A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C007425C4EFDD003EAD5A /* TabBar.swift */; };
 		FA0C007A25C4F16F003EAD5A /* TransitionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C007925C4F16F003EAD5A /* TransitionExample.swift */; };
+		FAB5627125C4FAB900A91F9D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5627025C4FAB900A91F9D /* OnboardingView.swift */; };
+		FAB5627925C4FAEA00A91F9D /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5627825C4FAEA00A91F9D /* InformationView.swift */; };
+		FAB5627F25C4FE3E00A91F9D /* NavStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5627E25C4FE3E00A91F9D /* NavStackView.swift */; };
+		FAB5628725C5053F00A91F9D /* DefaultPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5628625C5053F00A91F9D /* DefaultPage.swift */; };
+		FAB5628C25C5271A00A91F9D /* SimpleNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5628B25C5271A00A91F9D /* SimpleNav.swift */; };
+		FAB5629125C5303B00A91F9D /* SimplePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5629025C5303B00A91F9D /* SimplePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,12 +58,17 @@
 		FA0C003D25C3E680003EAD5A /* NavTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTestUITests.swift; sourceTree = "<group>"; };
 		FA0C003F25C3E680003EAD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA0C005325C3EF77003EAD5A /* DummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView.swift; sourceTree = "<group>"; };
-		FA0C006525C40ACB003EAD5A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FA0C006B25C40BD7003EAD5A /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		FA0C006C25C40BD7003EAD5A /* OnboardingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
 		FA0C006D25C40BD7003EAD5A /* PRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRouter.swift; sourceTree = "<group>"; };
 		FA0C007425C4EFDD003EAD5A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		FA0C007925C4F16F003EAD5A /* TransitionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionExample.swift; sourceTree = "<group>"; };
+		FAB5627025C4FAB900A91F9D /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		FAB5627825C4FAEA00A91F9D /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		FAB5627E25C4FE3E00A91F9D /* NavStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackView.swift; sourceTree = "<group>"; };
+		FAB5628625C5053F00A91F9D /* DefaultPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPage.swift; sourceTree = "<group>"; };
+		FAB5628B25C5271A00A91F9D /* SimpleNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNav.swift; sourceTree = "<group>"; };
+		FAB5629025C5303B00A91F9D /* SimplePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,16 +119,17 @@
 		FA0C001F25C3E673003EAD5A /* NavTest */ = {
 			isa = PBXGroup;
 			children = (
+				FAB5627D25C4FDEB00A91F9D /* default */,
+				FAB5626F25C4FAA400A91F9D /* onboarding */,
 				FA0C006A25C40BBF003EAD5A /* Router */,
 				FA0C002025C3E673003EAD5A /* NavTestApp.swift */,
 				FA0C002225C3E673003EAD5A /* ContentView.swift */,
 				FA0C002425C3E680003EAD5A /* Assets.xcassets */,
 				FA0C002925C3E680003EAD5A /* Info.plist */,
-				FA0C002625C3E680003EAD5A /* Preview Content */,
 				FA0C005325C3EF77003EAD5A /* DummyView.swift */,
-				FA0C006525C40ACB003EAD5A /* OnboardingView.swift */,
 				FA0C007425C4EFDD003EAD5A /* TabBar.swift */,
 				FA0C007925C4F16F003EAD5A /* TransitionExample.swift */,
+				FA0C002625C3E680003EAD5A /* Preview Content */,
 			);
 			path = NavTest;
 			sourceTree = "<group>";
@@ -157,6 +168,26 @@
 				FA0C006D25C40BD7003EAD5A /* PRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		FAB5626F25C4FAA400A91F9D /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5627025C4FAB900A91F9D /* OnboardingView.swift */,
+				FAB5627825C4FAEA00A91F9D /* InformationView.swift */,
+				FAB5629025C5303B00A91F9D /* SimplePage.swift */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		FAB5627D25C4FDEB00A91F9D /* default */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5627E25C4FE3E00A91F9D /* NavStackView.swift */,
+				FAB5628625C5053F00A91F9D /* DefaultPage.swift */,
+				FAB5628B25C5271A00A91F9D /* SimpleNav.swift */,
+			);
+			path = default;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,12 +321,17 @@
 			files = (
 				FA0C002325C3E673003EAD5A /* ContentView.swift in Sources */,
 				FA0C006F25C40BD7003EAD5A /* OnboardingRouter.swift in Sources */,
+				FAB5629125C5303B00A91F9D /* SimplePage.swift in Sources */,
 				FA0C005425C3EF77003EAD5A /* DummyView.swift in Sources */,
+				FAB5627F25C4FE3E00A91F9D /* NavStackView.swift in Sources */,
+				FAB5627125C4FAB900A91F9D /* OnboardingView.swift in Sources */,
 				FA0C007525C4EFDD003EAD5A /* TabBar.swift in Sources */,
+				FAB5627925C4FAEA00A91F9D /* InformationView.swift in Sources */,
 				FA0C002125C3E673003EAD5A /* NavTestApp.swift in Sources */,
 				FA0C007A25C4F16F003EAD5A /* TransitionExample.swift in Sources */,
 				FA0C006E25C40BD7003EAD5A /* AppRouter.swift in Sources */,
-				FA0C006625C40ACB003EAD5A /* OnboardingView.swift in Sources */,
+				FAB5628725C5053F00A91F9D /* DefaultPage.swift in Sources */,
+				FAB5628C25C5271A00A91F9D /* SimpleNav.swift in Sources */,
 				FA0C007025C40BD7003EAD5A /* PRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

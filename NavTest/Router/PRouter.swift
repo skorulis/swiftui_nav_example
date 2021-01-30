@@ -13,7 +13,8 @@ protocol RouteItem {
     var next: RouteItem? { get }
 }
 
-protocol PRouter: ObservableObject {
+protocol PRouter {
+    func pop()
     func trigger(route: RouteItem)
     
 }
