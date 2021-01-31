@@ -25,6 +25,10 @@
 		FAB5628725C5053F00A91F9D /* DefaultPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5628625C5053F00A91F9D /* DefaultPage.swift */; };
 		FAB5628C25C5271A00A91F9D /* SimpleNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5628B25C5271A00A91F9D /* SimpleNav.swift */; };
 		FAB5629125C5303B00A91F9D /* SimplePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5629025C5303B00A91F9D /* SimplePage.swift */; };
+		FAE6F5D325C619F0008A44C9 /* UIKitNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F5D225C619F0008A44C9 /* UIKitNavigationView.swift */; };
+		FAE6F5DB25C61BC9008A44C9 /* UIKitInnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F5DA25C61BC9008A44C9 /* UIKitInnerView.swift */; };
+		FAE6F5E025C61DD6008A44C9 /* UIKitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F5DF25C61DD6008A44C9 /* UIKitRouter.swift */; };
+		FAE6F5E525C62BA3008A44C9 /* SwiftBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F5E425C62BA3008A44C9 /* SwiftBarButtonItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		FAB5628625C5053F00A91F9D /* DefaultPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPage.swift; sourceTree = "<group>"; };
 		FAB5628B25C5271A00A91F9D /* SimpleNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNav.swift; sourceTree = "<group>"; };
 		FAB5629025C5303B00A91F9D /* SimplePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePage.swift; sourceTree = "<group>"; };
+		FAE6F5D225C619F0008A44C9 /* UIKitNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitNavigationView.swift; sourceTree = "<group>"; };
+		FAE6F5DA25C61BC9008A44C9 /* UIKitInnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitInnerView.swift; sourceTree = "<group>"; };
+		FAE6F5DF25C61DD6008A44C9 /* UIKitRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitRouter.swift; sourceTree = "<group>"; };
+		FAE6F5E425C62BA3008A44C9 /* SwiftBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBarButtonItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,7 @@
 		FA0C001F25C3E673003EAD5A /* NavTest */ = {
 			isa = PBXGroup;
 			children = (
+				FAE6F5D125C619E1008A44C9 /* uikit */,
 				FAB5627D25C4FDEB00A91F9D /* default */,
 				FAB5626F25C4FAA400A91F9D /* onboarding */,
 				FA0C006A25C40BBF003EAD5A /* Router */,
@@ -188,6 +197,17 @@
 				FAB5628B25C5271A00A91F9D /* SimpleNav.swift */,
 			);
 			path = default;
+			sourceTree = "<group>";
+		};
+		FAE6F5D125C619E1008A44C9 /* uikit */ = {
+			isa = PBXGroup;
+			children = (
+				FAE6F5D225C619F0008A44C9 /* UIKitNavigationView.swift */,
+				FAE6F5DA25C61BC9008A44C9 /* UIKitInnerView.swift */,
+				FAE6F5DF25C61DD6008A44C9 /* UIKitRouter.swift */,
+				FAE6F5E425C62BA3008A44C9 /* SwiftBarButtonItem.swift */,
+			);
+			path = uikit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,10 +346,14 @@
 				FAB5627F25C4FE3E00A91F9D /* NavStackView.swift in Sources */,
 				FAB5627125C4FAB900A91F9D /* OnboardingView.swift in Sources */,
 				FA0C007525C4EFDD003EAD5A /* TabBar.swift in Sources */,
+				FAE6F5D325C619F0008A44C9 /* UIKitNavigationView.swift in Sources */,
 				FAB5627925C4FAEA00A91F9D /* InformationView.swift in Sources */,
+				FAE6F5E025C61DD6008A44C9 /* UIKitRouter.swift in Sources */,
+				FAE6F5E525C62BA3008A44C9 /* SwiftBarButtonItem.swift in Sources */,
 				FA0C002125C3E673003EAD5A /* NavTestApp.swift in Sources */,
 				FA0C007A25C4F16F003EAD5A /* TransitionExample.swift in Sources */,
 				FA0C006E25C40BD7003EAD5A /* AppRouter.swift in Sources */,
+				FAE6F5DB25C61BC9008A44C9 /* UIKitInnerView.swift in Sources */,
 				FAB5628725C5053F00A91F9D /* DefaultPage.swift in Sources */,
 				FAB5628C25C5271A00A91F9D /* SimpleNav.swift in Sources */,
 				FA0C007025C40BD7003EAD5A /* PRouter.swift in Sources */,

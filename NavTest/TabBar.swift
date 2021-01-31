@@ -16,11 +16,15 @@ struct AppTabBar: View {
                     Image(systemName: "sun.min")
                     Text("Nav")
                 }
-            TransitionExample()
+            UIKitRouterView(router: UIKitRouter())
+                .tabItem {
+                    Text("UIKit")
+                }
+            /*TransitionExample()
                 .tabItem {
                     Image(systemName: "moon.fill")
                     Text("Transitions")
-                }
+                }*/
             NavStackView()
                 .tabItem {
                     Image(systemName: "bag")

@@ -7,6 +7,17 @@
 
 import SwiftUI
 
+struct NavigationLazyView<Content: View>: View {
+    let build: () -> Content
+    init(_ build: @autoclosure @escaping () -> Content) {
+        self.build = build
+    }
+    var body: Content {
+        build()
+    }
+}
+
+
 struct ProgramaticLink<Destination> : View where Destination : View {
     
     private let destination: Destination
@@ -19,7 +30,7 @@ struct ProgramaticLink<Destination> : View where Destination : View {
     
     var body: some View {
         NavigationLink(
-            destination: destination,
+            destination: NavigationLazyView(destination),
             isActive: $isActive,
             label: { EmptyView() }
         )

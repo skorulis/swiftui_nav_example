@@ -9,10 +9,20 @@ import SwiftUI
 
 struct SimpleNav: View {
     
+    var page3: some View {
+        Text("Page 3 is here")
+            .navigationTitle("Page3")
+            .navigationBarItems(leading: Text("Page3"))
+    }
+    
     var page2: some View {
-        VStack {
-            Text("String")
-        }
+        NavigationLink(
+            destination: page3,
+            label: {
+                Text("Page 3")
+            })
+            .navigationTitle("Page2")
+            .navigationBarItems(leading: Text("Page2"))
     }
     
     
@@ -23,11 +33,7 @@ struct SimpleNav: View {
                 label: {
                     Text("Page 2")
                 })
-            Button(action: {
-                
-            }, label: {
-                Text("Page 1")
-            })
+                .navigationTitle("Page1")
         }
         
     }
