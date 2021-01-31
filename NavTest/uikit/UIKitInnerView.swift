@@ -16,14 +16,20 @@ struct UIKitInnerView: View {
         self.page = page
     }
     
-    
     var body: some View {
-        Button(action: {
-            print("Next")
-            router.push(route: page.next)
-        }, label: {
-            Text("Next page")
-        })
+        ScrollView {
+            Button(action: {
+                print("Next")
+                router.push(route: page.next)
+            }, label: {
+                Text("Next page")
+            })
+            Spacer(minLength: 200)
+            Text("Some content at the middle of the page")
+            Spacer(minLength: 400)
+            Text("Some content at the bottom of the page that should wrap over multiple lines")
+        }
+        
     }
     
 }

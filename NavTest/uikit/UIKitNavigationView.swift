@@ -7,6 +7,12 @@
 import SwiftUI
 import UIKit
 
+struct UIKitNavPage {
+    
+    let page: AnyView
+    let title: String
+}
+
 struct UIKitNavigationView: UIViewControllerRepresentable {
     @ObservedObject var router: UIKitRouter
 
