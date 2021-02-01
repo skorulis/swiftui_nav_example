@@ -16,7 +16,9 @@ struct FormExampleView: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
+            
+            VStack(alignment: .center) {
+                
                 Form {
                     Section(header: Text("Form ")) {
                         Toggle(isOn: $notificationsEnabled) {

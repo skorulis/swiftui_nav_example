@@ -19,6 +19,9 @@
 		FA0C007025C40BD7003EAD5A /* PRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C006D25C40BD7003EAD5A /* PRouter.swift */; };
 		FA0C007525C4EFDD003EAD5A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C007425C4EFDD003EAD5A /* TabBar.swift */; };
 		FA0C007A25C4F16F003EAD5A /* TransitionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C007925C4F16F003EAD5A /* TransitionExample.swift */; };
+		FA5AAB0425C7FB2000F1033C /* LayoutExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AAB0325C7FB2000F1033C /* LayoutExampleView.swift */; };
+		FA5AAB0925C7FC2E00F1033C /* ListExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AAB0825C7FC2E00F1033C /* ListExample.swift */; };
+		FA5AAB0E25C7FCB300F1033C /* SeparatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AAB0D25C7FCB300F1033C /* SeparatedView.swift */; };
 		FA6DAC0325C645CC00C51E46 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DAC0225C645CC00C51E46 /* CustomNavigationView.swift */; };
 		FA6DAC0925C7D96900C51E46 /* FormExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DAC0825C7D96900C51E46 /* FormExampleView.swift */; };
 		FAB5627125C4FAB900A91F9D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5627025C4FAB900A91F9D /* OnboardingView.swift */; };
@@ -69,6 +72,9 @@
 		FA0C006D25C40BD7003EAD5A /* PRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRouter.swift; sourceTree = "<group>"; };
 		FA0C007425C4EFDD003EAD5A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		FA0C007925C4F16F003EAD5A /* TransitionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionExample.swift; sourceTree = "<group>"; };
+		FA5AAB0325C7FB2000F1033C /* LayoutExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutExampleView.swift; sourceTree = "<group>"; };
+		FA5AAB0825C7FC2E00F1033C /* ListExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExample.swift; sourceTree = "<group>"; };
+		FA5AAB0D25C7FCB300F1033C /* SeparatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatedView.swift; sourceTree = "<group>"; };
 		FA6DAC0225C645CC00C51E46 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		FA6DAC0825C7D96900C51E46 /* FormExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormExampleView.swift; sourceTree = "<group>"; };
 		FAB5627025C4FAB900A91F9D /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -197,6 +203,9 @@
 			isa = PBXGroup;
 			children = (
 				FA6DAC0825C7D96900C51E46 /* FormExampleView.swift */,
+				FA5AAB0325C7FB2000F1033C /* LayoutExampleView.swift */,
+				FA5AAB0825C7FC2E00F1033C /* ListExample.swift */,
+				FA5AAB0D25C7FCB300F1033C /* SeparatedView.swift */,
 			);
 			path = layout;
 			sourceTree = "<group>";
@@ -366,10 +375,12 @@
 				FAB5629125C5303B00A91F9D /* SimplePage.swift in Sources */,
 				FA0C005425C3EF77003EAD5A /* DummyView.swift in Sources */,
 				FAB5627F25C4FE3E00A91F9D /* NavStackView.swift in Sources */,
+				FA5AAB0425C7FB2000F1033C /* LayoutExampleView.swift in Sources */,
 				FAB5627125C4FAB900A91F9D /* OnboardingView.swift in Sources */,
 				FA0C007525C4EFDD003EAD5A /* TabBar.swift in Sources */,
 				FAE6F5D325C619F0008A44C9 /* UIKitNavigationView.swift in Sources */,
 				FAB5627925C4FAEA00A91F9D /* InformationView.swift in Sources */,
+				FA5AAB0E25C7FCB300F1033C /* SeparatedView.swift in Sources */,
 				FAE6F5E025C61DD6008A44C9 /* UIKitRouter.swift in Sources */,
 				FAE6F5E525C62BA3008A44C9 /* SwiftBarButtonItem.swift in Sources */,
 				FA0C002125C3E673003EAD5A /* NavTestApp.swift in Sources */,
@@ -380,6 +391,7 @@
 				FAB5628725C5053F00A91F9D /* DefaultPage.swift in Sources */,
 				FAB5628C25C5271A00A91F9D /* SimpleNav.swift in Sources */,
 				FA0C007025C40BD7003EAD5A /* PRouter.swift in Sources */,
+				FA5AAB0925C7FC2E00F1033C /* ListExample.swift in Sources */,
 				FA6DAC0325C645CC00C51E46 /* CustomNavigationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
