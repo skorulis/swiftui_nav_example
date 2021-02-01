@@ -7,15 +7,31 @@
 
 import SwiftUI
 
-
-
 struct SeparatedView: View {
     
     let items: [AnyView]
         
-    // MARK: TupleView support
+    // this init will be used for any non-supported number of TupleView
+    public init<A: View>(@ViewBuilder content: () -> A) {
+        let extracted = SeparatedView.extractViewsFromContent(content: content)
+        self.items = extracted
+    }
     
-    public init<A: View, B: View>(@ViewBuilder content: () -> TupleView<(A, B)>) {
+    static func extractViewsFromContent<Content: View> (@ViewBuilder content: () -> Content) -> [AnyView] {
+        let tupleView = content()
+        let tupleViewMirror = Mirror(reflecting: tupleView)
+        let tuple = tupleViewMirror.children.first!.value
+        let tupleMirror = Mirror(reflecting: tuple)
+        let views = tupleMirror.children.map { (child) -> AnyView in
+            //let innerMirror = Mirror(reflecting: child.value)
+            return AnyView(_fromValue: child.value)!
+        }
+        return views
+    }
+    
+    // MARK: TupleView support
+        
+    /*public init<A: View, B: View>(@ViewBuilder content: () -> TupleView<(A, B)>) {
         let views = content().value
         self.items = [AnyView(views.0), AnyView(views.1)]
     }
@@ -37,7 +53,11 @@ struct SeparatedView: View {
         self.items = views.data.map({ AnyView(views.content($0)) })
     }
     
-    
+    // this init will be used for any non-supported number of TupleView
+    public init<A: View>(@ViewBuilder content: () -> A) {
+        let views = content()
+        self.items = [AnyView(views)]
+    }*/
     
     var body: some View {
         VStack(alignment:.leading, spacing: 0) {

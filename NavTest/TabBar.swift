@@ -13,6 +13,8 @@ struct SeparatedViewExample: View {
             ForEach(0..<5) { x in
                 Text("TEST \(x)")
             }
+            Text("TEST")
+            Text("TEST2")
         }
     }
 }
