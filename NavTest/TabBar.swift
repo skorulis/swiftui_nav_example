@@ -7,6 +7,16 @@
 
 import SwiftUI
 
+struct SeparatedViewExample: View {
+    var body: some View {
+        SeparatedView {
+            ForEach(0..<5) { x in
+                Text("TEST \(x)")
+            }
+        }
+    }
+}
+
 struct AppTabBar: View {
     
     var body: some View {
@@ -37,6 +47,8 @@ struct AppTabBar: View {
                 }
             FormExampleView()
                 .tabItem { Text("Form") }
+            SeparatedViewExample()
+                .tabItem { Text("Separated View") }
         }
     }
     
