@@ -35,6 +35,8 @@ struct AppTabBar: View {
                 .tabItem {
                     Text("Simple")
                 }
+            FormExampleView()
+                .tabItem { Text("Form") }
         }
     }
     

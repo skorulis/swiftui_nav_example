@@ -11,6 +11,11 @@ struct UIKitNavPage {
     
     let page: AnyView
     let title: String
+    
+    init<ViewType: View>(view: ViewType, title:  String)  {
+        self.page = AnyView(view)
+        self.title = title
+    }
 }
 
 struct UIKitNavigationView: UIViewControllerRepresentable {

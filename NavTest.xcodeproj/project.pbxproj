@@ -19,6 +19,8 @@
 		FA0C007025C40BD7003EAD5A /* PRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C006D25C40BD7003EAD5A /* PRouter.swift */; };
 		FA0C007525C4EFDD003EAD5A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C007425C4EFDD003EAD5A /* TabBar.swift */; };
 		FA0C007A25C4F16F003EAD5A /* TransitionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C007925C4F16F003EAD5A /* TransitionExample.swift */; };
+		FA6DAC0325C645CC00C51E46 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DAC0225C645CC00C51E46 /* CustomNavigationView.swift */; };
+		FA6DAC0925C7D96900C51E46 /* FormExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DAC0825C7D96900C51E46 /* FormExampleView.swift */; };
 		FAB5627125C4FAB900A91F9D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5627025C4FAB900A91F9D /* OnboardingView.swift */; };
 		FAB5627925C4FAEA00A91F9D /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5627825C4FAEA00A91F9D /* InformationView.swift */; };
 		FAB5627F25C4FE3E00A91F9D /* NavStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5627E25C4FE3E00A91F9D /* NavStackView.swift */; };
@@ -67,6 +69,8 @@
 		FA0C006D25C40BD7003EAD5A /* PRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRouter.swift; sourceTree = "<group>"; };
 		FA0C007425C4EFDD003EAD5A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		FA0C007925C4F16F003EAD5A /* TransitionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionExample.swift; sourceTree = "<group>"; };
+		FA6DAC0225C645CC00C51E46 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		FA6DAC0825C7D96900C51E46 /* FormExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormExampleView.swift; sourceTree = "<group>"; };
 		FAB5627025C4FAB900A91F9D /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FAB5627825C4FAEA00A91F9D /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		FAB5627E25C4FE3E00A91F9D /* NavStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackView.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 		FA0C001F25C3E673003EAD5A /* NavTest */ = {
 			isa = PBXGroup;
 			children = (
+				FA6DAC0725C7D96100C51E46 /* layout */,
+				FA6DAC0125C6455F00C51E46 /* custom */,
 				FAE6F5D125C619E1008A44C9 /* uikit */,
 				FAB5627D25C4FDEB00A91F9D /* default */,
 				FAB5626F25C4FAA400A91F9D /* onboarding */,
@@ -177,6 +183,22 @@
 				FA0C006D25C40BD7003EAD5A /* PRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		FA6DAC0125C6455F00C51E46 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				FA6DAC0225C645CC00C51E46 /* CustomNavigationView.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		FA6DAC0725C7D96100C51E46 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				FA6DAC0825C7D96900C51E46 /* FormExampleView.swift */,
+			);
+			path = layout;
 			sourceTree = "<group>";
 		};
 		FAB5626F25C4FAA400A91F9D /* onboarding */ = {
@@ -354,9 +376,11 @@
 				FA0C007A25C4F16F003EAD5A /* TransitionExample.swift in Sources */,
 				FA0C006E25C40BD7003EAD5A /* AppRouter.swift in Sources */,
 				FAE6F5DB25C61BC9008A44C9 /* UIKitInnerView.swift in Sources */,
+				FA6DAC0925C7D96900C51E46 /* FormExampleView.swift in Sources */,
 				FAB5628725C5053F00A91F9D /* DefaultPage.swift in Sources */,
 				FAB5628C25C5271A00A91F9D /* SimpleNav.swift in Sources */,
 				FA0C007025C40BD7003EAD5A /* PRouter.swift in Sources */,
+				FA6DAC0325C645CC00C51E46 /* CustomNavigationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
