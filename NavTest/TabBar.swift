@@ -51,6 +51,8 @@ struct AppTabBar: View {
                 .tabItem { Text("Form") }
             SeparatedViewExample()
                 .tabItem { Text("Separated View") }
+            GeometryExampleView()
+                .tabItem { Text("Geometry example") }
         }
     }
     
