@@ -53,6 +53,8 @@ struct AppTabBar: View {
                 .tabItem { Text("Separated View") }
             GeometryExampleView()
                 .tabItem { Text("Geometry example") }
+            ReduxExampleView()
+                .tabItem { Text("Redux example") }
         }
     }
     

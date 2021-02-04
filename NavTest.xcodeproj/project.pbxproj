@@ -26,6 +26,8 @@
 		FA6DAC0325C645CC00C51E46 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DAC0225C645CC00C51E46 /* CustomNavigationView.swift */; };
 		FA6DAC0925C7D96900C51E46 /* FormExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DAC0825C7D96900C51E46 /* FormExampleView.swift */; };
 		FAA8001E25CBE027001365C0 /* CombineRex in Frameworks */ = {isa = PBXBuildFile; productRef = FAA8001D25CBE027001365C0 /* CombineRex */; };
+		FAA8002325CBE267001365C0 /* ReduxExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8002225CBE267001365C0 /* ReduxExampleView.swift */; };
+		FAA8002825CBE2A2001365C0 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8002725CBE2A2001365C0 /* AppStore.swift */; };
 		FAB5627125C4FAB900A91F9D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5627025C4FAB900A91F9D /* OnboardingView.swift */; };
 		FAB5627925C4FAEA00A91F9D /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5627825C4FAEA00A91F9D /* InformationView.swift */; };
 		FAB5627F25C4FE3E00A91F9D /* NavStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5627E25C4FE3E00A91F9D /* NavStackView.swift */; };
@@ -80,6 +82,8 @@
 		FA5AAB1225C94B8500F1033C /* GeometryExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryExampleView.swift; sourceTree = "<group>"; };
 		FA6DAC0225C645CC00C51E46 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		FA6DAC0825C7D96900C51E46 /* FormExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormExampleView.swift; sourceTree = "<group>"; };
+		FAA8002225CBE267001365C0 /* ReduxExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxExampleView.swift; sourceTree = "<group>"; };
+		FAA8002725CBE2A2001365C0 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
 		FAB5627025C4FAB900A91F9D /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FAB5627825C4FAEA00A91F9D /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		FAB5627E25C4FE3E00A91F9D /* NavStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackView.swift; sourceTree = "<group>"; };
@@ -211,6 +215,8 @@
 				FA5AAB0825C7FC2E00F1033C /* ListExample.swift */,
 				FA5AAB0D25C7FCB300F1033C /* SeparatedView.swift */,
 				FA5AAB1225C94B8500F1033C /* GeometryExampleView.swift */,
+				FAA8002225CBE267001365C0 /* ReduxExampleView.swift */,
+				FAA8002725CBE2A2001365C0 /* AppStore.swift */,
 			);
 			path = layout;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA8002325CBE267001365C0 /* ReduxExampleView.swift in Sources */,
 				FA0C002325C3E673003EAD5A /* ContentView.swift in Sources */,
 				FA0C006F25C40BD7003EAD5A /* OnboardingRouter.swift in Sources */,
 				FAB5629125C5303B00A91F9D /* SimplePage.swift in Sources */,
@@ -401,6 +408,7 @@
 				FAE6F5DB25C61BC9008A44C9 /* UIKitInnerView.swift in Sources */,
 				FA6DAC0925C7D96900C51E46 /* FormExampleView.swift in Sources */,
 				FAB5628725C5053F00A91F9D /* DefaultPage.swift in Sources */,
+				FAA8002825CBE2A2001365C0 /* AppStore.swift in Sources */,
 				FAB5628C25C5271A00A91F9D /* SimpleNav.swift in Sources */,
 				FA0C007025C40BD7003EAD5A /* PRouter.swift in Sources */,
 				FA5AAB0925C7FC2E00F1033C /* ListExample.swift in Sources */,
