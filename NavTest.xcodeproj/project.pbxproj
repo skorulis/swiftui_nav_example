@@ -28,6 +28,9 @@
 		FAA8001E25CBE027001365C0 /* CombineRex in Frameworks */ = {isa = PBXBuildFile; productRef = FAA8001D25CBE027001365C0 /* CombineRex */; };
 		FAA8002325CBE267001365C0 /* ReduxExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8002225CBE267001365C0 /* ReduxExampleView.swift */; };
 		FAA8002825CBE2A2001365C0 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8002725CBE2A2001365C0 /* AppStore.swift */; };
+		FAA8004B25CE2AE4001365C0 /* VerticalExpandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8004A25CE2AE4001365C0 /* VerticalExpandView.swift */; };
+		FAA8005025CE373B001365C0 /* TextAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8004F25CE373B001365C0 /* TextAnimationView.swift */; };
+		FAA8005625CF4F05001365C0 /* ScrollViewOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8005525CF4F05001365C0 /* ScrollViewOffset.swift */; };
 		FAB5627125C4FAB900A91F9D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5627025C4FAB900A91F9D /* OnboardingView.swift */; };
 		FAB5627925C4FAEA00A91F9D /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5627825C4FAEA00A91F9D /* InformationView.swift */; };
 		FAB5627F25C4FE3E00A91F9D /* NavStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5627E25C4FE3E00A91F9D /* NavStackView.swift */; };
@@ -84,6 +87,9 @@
 		FA6DAC0825C7D96900C51E46 /* FormExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormExampleView.swift; sourceTree = "<group>"; };
 		FAA8002225CBE267001365C0 /* ReduxExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxExampleView.swift; sourceTree = "<group>"; };
 		FAA8002725CBE2A2001365C0 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		FAA8004A25CE2AE4001365C0 /* VerticalExpandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalExpandView.swift; sourceTree = "<group>"; };
+		FAA8004F25CE373B001365C0 /* TextAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnimationView.swift; sourceTree = "<group>"; };
+		FAA8005525CF4F05001365C0 /* ScrollViewOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOffset.swift; sourceTree = "<group>"; };
 		FAB5627025C4FAB900A91F9D /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FAB5627825C4FAEA00A91F9D /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		FAB5627E25C4FE3E00A91F9D /* NavStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackView.swift; sourceTree = "<group>"; };
@@ -145,6 +151,7 @@
 		FA0C001F25C3E673003EAD5A /* NavTest */ = {
 			isa = PBXGroup;
 			children = (
+				FAA8005425CF4EFD001365C0 /* helpers */,
 				FA6DAC0725C7D96100C51E46 /* layout */,
 				FA6DAC0125C6455F00C51E46 /* custom */,
 				FAE6F5D125C619E1008A44C9 /* uikit */,
@@ -217,8 +224,18 @@
 				FA5AAB1225C94B8500F1033C /* GeometryExampleView.swift */,
 				FAA8002225CBE267001365C0 /* ReduxExampleView.swift */,
 				FAA8002725CBE2A2001365C0 /* AppStore.swift */,
+				FAA8004A25CE2AE4001365C0 /* VerticalExpandView.swift */,
+				FAA8004F25CE373B001365C0 /* TextAnimationView.swift */,
 			);
 			path = layout;
+			sourceTree = "<group>";
+		};
+		FAA8005425CF4EFD001365C0 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8005525CF4F05001365C0 /* ScrollViewOffset.swift */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 		FAB5626F25C4FAA400A91F9D /* onboarding */ = {
@@ -389,10 +406,12 @@
 			files = (
 				FAA8002325CBE267001365C0 /* ReduxExampleView.swift in Sources */,
 				FA0C002325C3E673003EAD5A /* ContentView.swift in Sources */,
+				FAA8005625CF4F05001365C0 /* ScrollViewOffset.swift in Sources */,
 				FA0C006F25C40BD7003EAD5A /* OnboardingRouter.swift in Sources */,
 				FAB5629125C5303B00A91F9D /* SimplePage.swift in Sources */,
 				FA0C005425C3EF77003EAD5A /* DummyView.swift in Sources */,
 				FAB5627F25C4FE3E00A91F9D /* NavStackView.swift in Sources */,
+				FAA8004B25CE2AE4001365C0 /* VerticalExpandView.swift in Sources */,
 				FA5AAB0425C7FB2000F1033C /* LayoutExampleView.swift in Sources */,
 				FAB5627125C4FAB900A91F9D /* OnboardingView.swift in Sources */,
 				FA5AAB1325C94B8500F1033C /* GeometryExampleView.swift in Sources */,
@@ -404,6 +423,7 @@
 				FAE6F5E525C62BA3008A44C9 /* SwiftBarButtonItem.swift in Sources */,
 				FA0C002125C3E673003EAD5A /* NavTestApp.swift in Sources */,
 				FA0C007A25C4F16F003EAD5A /* TransitionExample.swift in Sources */,
+				FAA8005025CE373B001365C0 /* TextAnimationView.swift in Sources */,
 				FA0C006E25C40BD7003EAD5A /* AppRouter.swift in Sources */,
 				FAE6F5DB25C61BC9008A44C9 /* UIKitInnerView.swift in Sources */,
 				FA6DAC0925C7D96900C51E46 /* FormExampleView.swift in Sources */,

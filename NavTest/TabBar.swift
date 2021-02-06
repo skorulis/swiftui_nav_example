@@ -23,6 +23,8 @@ struct AppTabBar: View {
     
     var body: some View {
         TabView {
+            VerticalExpandView()
+                .tabItem { Text("Vertical expand") }
             AppRouterView(router: AppRouter())
                 .tabItem {
                     Image(systemName: "sun.min")
@@ -55,6 +57,8 @@ struct AppTabBar: View {
                 .tabItem { Text("Geometry example") }
             ReduxExampleView()
                 .tabItem { Text("Redux example") }
+            TextAnimationView()
+                .tabItem { Text("Text animation") }
         }
     }
     
