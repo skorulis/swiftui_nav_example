@@ -10,7 +10,8 @@ import SwiftUI
 struct UIKitInnerView: View {
     
     private let page: UIKitRoute
-    @EnvironmentObject var router: UIKitRouter
+    //@EnvironmentObject var router: UIKitRouter
+    @EnvironmentObject var router: CustomNavigationStack
     
     init(page: UIKitRoute)  {
         self.page = page
@@ -24,6 +25,10 @@ struct UIKitInnerView: View {
             }, label: {
                 Text("Next page")
             })
+            Text("This is page \(page.rawValue)")
+            Rectangle()
+                .frame(height: 50)
+                .foregroundColor(page.color)
             Spacer(minLength: 200)
             Text("Some content at the middle of the page")
             Spacer(minLength: 400)

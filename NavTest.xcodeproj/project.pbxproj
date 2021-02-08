@@ -41,6 +41,8 @@
 		FAE6F5DB25C61BC9008A44C9 /* UIKitInnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F5DA25C61BC9008A44C9 /* UIKitInnerView.swift */; };
 		FAE6F5E025C61DD6008A44C9 /* UIKitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F5DF25C61DD6008A44C9 /* UIKitRouter.swift */; };
 		FAE6F5E525C62BA3008A44C9 /* SwiftBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F5E425C62BA3008A44C9 /* SwiftBarButtonItem.swift */; };
+		FAF6E8A925D1223200A2855F /* CustomNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6E8A825D1223200A2855F /* CustomNavigationStack.swift */; };
+		FAF6E8B425D1360300A2855F /* AnimationTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6E8B325D1360300A2855F /* AnimationTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		FAE6F5DA25C61BC9008A44C9 /* UIKitInnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitInnerView.swift; sourceTree = "<group>"; };
 		FAE6F5DF25C61DD6008A44C9 /* UIKitRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitRouter.swift; sourceTree = "<group>"; };
 		FAE6F5E425C62BA3008A44C9 /* SwiftBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBarButtonItem.swift; sourceTree = "<group>"; };
+		FAF6E8A825D1223200A2855F /* CustomNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationStack.swift; sourceTree = "<group>"; };
+		FAF6E8B325D1360300A2855F /* AnimationTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 		FA0C001F25C3E673003EAD5A /* NavTest */ = {
 			isa = PBXGroup;
 			children = (
+				FAF6E8B225D134B200A2855F /* animation */,
 				FAA8005425CF4EFD001365C0 /* helpers */,
 				FA6DAC0725C7D96100C51E46 /* layout */,
 				FA6DAC0125C6455F00C51E46 /* custom */,
@@ -210,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				FA6DAC0225C645CC00C51E46 /* CustomNavigationView.swift */,
+				FAF6E8A825D1223200A2855F /* CustomNavigationStack.swift */,
 			);
 			path = custom;
 			sourceTree = "<group>";
@@ -267,6 +273,14 @@
 				FAE6F5E425C62BA3008A44C9 /* SwiftBarButtonItem.swift */,
 			);
 			path = uikit;
+			sourceTree = "<group>";
+		};
+		FAF6E8B225D134B200A2855F /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				FAF6E8B325D1360300A2855F /* AnimationTestView.swift */,
+			);
+			path = animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,7 +429,9 @@
 				FA5AAB0425C7FB2000F1033C /* LayoutExampleView.swift in Sources */,
 				FAB5627125C4FAB900A91F9D /* OnboardingView.swift in Sources */,
 				FA5AAB1325C94B8500F1033C /* GeometryExampleView.swift in Sources */,
+				FAF6E8A925D1223200A2855F /* CustomNavigationStack.swift in Sources */,
 				FA0C007525C4EFDD003EAD5A /* TabBar.swift in Sources */,
+				FAF6E8B425D1360300A2855F /* AnimationTestView.swift in Sources */,
 				FAE6F5D325C619F0008A44C9 /* UIKitNavigationView.swift in Sources */,
 				FAB5627925C4FAEA00A91F9D /* InformationView.swift in Sources */,
 				FA5AAB0E25C7FCB300F1033C /* SeparatedView.swift in Sources */,

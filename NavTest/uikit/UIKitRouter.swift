@@ -13,7 +13,7 @@ enum UIKitRoute: String {
     case page3
 }
 
-extension UIKitRoute {
+extension UIKitRoute: Identifiable {
     
     var title: String {
         return self.rawValue
@@ -26,6 +26,16 @@ extension UIKitRoute {
         case .page3: return .page1
         }
     }
+    
+    var color: Color {
+        switch self {
+        case .page1: return .blue
+        case .page2: return .orange
+        case .page3: return .purple
+        }
+    }
+    
+    var id: String { rawValue }
     
     @ViewBuilder var view: some View {
         UIKitInnerView(page: self)

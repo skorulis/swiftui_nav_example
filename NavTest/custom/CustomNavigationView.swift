@@ -6,18 +6,52 @@
 //
 
 import SwiftUI
+import Combine
+
 
 struct CustomNavigationView: View {
     
+    @ObservedObject var router: CustomNavigationStack
     
+    init(router: CustomNavigationStack) {
+        self.router = CustomNavigationStack()
+    }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            innerView
+                .transition(.move(edge: .leading))
+        }
+        
+        .environmentObject(router)
+        
+    }
+    
+    @ViewBuilder
+    var innerView: some View {
+        let element = router.stack.last!
+        element.view
+            .id(element.id)
+            .navigationBarItems(leading: backButton)
+            
+    }
+    
+    @ViewBuilder
+    private var backButton: some View {
+        if router.stack.count > 1 {
+            Button("Back", action: {
+                withAnimation {
+                    router.pop()
+                }
+            })
+        } else {
+            EmptyView()
+        }
     }
 }
 
 struct CustomNavigationView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomNavigationView()
+        CustomNavigationView(router: CustomNavigationStack())
     }
 }

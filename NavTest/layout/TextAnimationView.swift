@@ -29,6 +29,30 @@ extension View {
     }
 }
 
+struct TopNavBar: View {
+    
+    private var fontSize: CGFloat {
+        return expanded ? 40 : 20
+    }
+    
+    var expanded: Bool
+    
+    init(expanded: Bool) {
+        self.expanded = expanded
+    }
+    
+    var body: some View {
+        ZStack {
+            Text("Some long text that might wrap")
+                .fixedSize(horizontal: false, vertical: true)
+                .padding()
+                .animatableFont(name: "Georgia", size: fontSize)
+                .animation(.easeIn)
+                //.offset(x: 0, y: self.scrollOffset)
+        }
+    }
+}
+
 
 struct TextAnimationView: View {
     
@@ -36,9 +60,20 @@ struct TextAnimationView: View {
         return expanded ? 40 : 20
     }
     
-    
     @State var expanded: Bool = true
-    @State var scrollOffset: CGFloat = 0
+    @State var scrollOffset: CGFloat = 0 {
+        didSet {
+            if expanded {
+                if scrollOffset > 50 {
+                    expanded = false
+                }
+            } else  {
+                if scrollOffset < 20 {
+                    expanded =  true
+                }
+            }
+        }
+    }
 
     
     var body: some View {
@@ -46,14 +81,18 @@ struct TextAnimationView: View {
             self.scrollOffset = offset
         } content: {
             VStack {
-                Text("Some long text that might wrap \(scrollOffset)")
+                Text("Some long text that might wrap")
                     .fixedSize(horizontal: false, vertical: true)
                     .padding()
                     .animatableFont(name: "Georgia", size: fontSize)
+                    .animation(.easeIn)
                     .offset(x: 0, y: self.scrollOffset)
+                
                 Toggle(isOn: $expanded.animation(.easeIn), label: {
                     Text("Expand")
                 })
+                
+                Text("Offset \(scrollOffset)")
                 ForEach(0..<6) { i in
                     Text("Some more text to make the page scroll \(i)")
                         .padding(40)

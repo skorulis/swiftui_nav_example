@@ -23,6 +23,8 @@ struct AppTabBar: View {
     
     var body: some View {
         TabView {
+            CustomNavigationView(router: CustomNavigationStack())
+                .tabItem { Text("Custom Nav") }
             VerticalExpandView()
                 .tabItem { Text("Vertical expand") }
             AppRouterView(router: AppRouter())
@@ -55,10 +57,12 @@ struct AppTabBar: View {
                 .tabItem { Text("Separated View") }
             GeometryExampleView()
                 .tabItem { Text("Geometry example") }
-            ReduxExampleView()
-                .tabItem { Text("Redux example") }
-            TextAnimationView()
-                .tabItem { Text("Text animation") }
+            //ReduxExampleView()
+                //.tabItem { Text("Redux example") }
+            /*TextAnimationView()
+                .tabItem { Text("Text animation") }*/
+            AnimationTestView()
+                .tabItem { Text("Animation test") }
         }
     }
     
